@@ -21,7 +21,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    async createdUser(req, res){
+    async createUser(req, res){
         try {
             const newUser = await User.create(req.body);
             res.json(newUser);
